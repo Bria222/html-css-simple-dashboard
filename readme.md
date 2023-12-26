@@ -1,4 +1,6 @@
-# simple dashboard with pure html and css
+# simple dashboard with pure HTML and CSS
+![Screenshot from 2023-12-26 20-11-12](https://github.com/Bria222/html-css-simple-dashboard/assets/64264883/c9383681-b0e8-4d2b-b460-2fd586be05e6)
 
-![Screenshot from 2023-12-26 15-43-27](https://github.com/Bria222/html-css-simple-dashboard/assets/64264883/cc869d01-235f-49a7-93db-bd62f2ef5fe0)
+
+
 
