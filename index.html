@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar" id="sidebar">
+        <div>
+          <h2>Dashboard</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Reports</a></li>
+            <li class="user-dropdown">
+              <a href="#">User</a>
+              <div class="user-dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="side-bottom">bottom</div>
+      </div>
+
+      <div class="main-content">
+        <div class="navbar">
+          <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+          <h2>Dashboard</h2>
+          <div class="user-dropdown">
+            <p>Welcome, User!</p>
+            <div class="user-dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="widget">
+            <h3>Widget 1</h3>
+            <p>Content for Widget 1</p>
+          </div>
+
+          <div class="widget">
+            <h3>Widget 2</h3>
+            <p>Content for Widget 2</p>
+          </div>
+
+          <div class="widget">
+            <h3>Widget 3</h3>
+            <p>Content for Widget 3</p>
+          </div>
+
+          <div class="widget">
+            <h3>Widget 4</h3>
+            <p>Content for Widget 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar')
+        sidebar.style.display =
+          sidebar.style.display === 'none' ? 'flex' : 'none'
+      }
+    </script>
+  </body>
+</html>
