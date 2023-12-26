@@ -43,7 +43,7 @@
         </div>
         <div class="side-bottom">
           <i class="fa-solid fa-arrow-up-from-bracket"></i>
-          bottom
+          BeeTech
         </div>
       </div>
 
@@ -84,49 +84,35 @@
         </section>
 
         <div class="analytics content">
-          <table class="table">
+          <table class="table" id="dataTable">
             <thead>
               <th>#code</th>
               <th>Name</th>
               <th>Sales</th>
-              <th>revenue</th>
+              <th>Revenue</th>
               <th>Status</th>
             </thead>
-            <tbody>
-              <tr>
-                <td data-label="S.No">1</td>
-                <td data-label="Name">Dinesh</td>
-                <td data-label="Age">34</td>
-                <td data-label="Marks%">50%</td>
-                <td data-label="Staus">Passed</td>
-              </tr>
-
-              <tr>
-                <td data-label="S.No">2</td>
-                <td data-label="Name">Kamal</td>
-                <td data-label="Age">23</td>
-                <td data-label="Marks%">70%</td>
-                <td data-label="Staus">Passed</td>
-              </tr>
-
-              <tr>
-                <td data-label="S.No">3</td>
-                <td data-label="Name">Neha</td>
-                <td data-label="Age">20</td>
-                <td data-label="Marks%">90%</td>
-                <td data-label="Staus">Passed</td>
-              </tr>
-
-              <tr>
-                <td data-label="S.No">4</td>
-                <td data-label="Name">Priya</td>
-                <td data-label="Age">30</td>
-                <td data-label="Marks%">30%</td>
-                <td data-label="Staus">Failed</td>
-              </tr>
-            </tbody>
+            <tbody id="dataBody"></tbody>
           </table>
         </div>
+
+        <script type="module">
+          import dataRecords from './data.js'
+
+          const dataBody = document.getElementById('dataBody')
+
+          dataRecords.forEach((record) => {
+            const row = document.createElement('tr')
+            row.innerHTML = `
+                <td>${record.code}</td>
+                <td>${record.name}</td>
+                <td>${record.sales}</td>
+                <td>${record.revenue}</td>
+                <td>${record.status}</td>
+              `
+            dataBody.appendChild(row)
+          })
+        </script>
       </section>
     </div>
 
