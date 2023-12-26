@@ -30,7 +30,7 @@
         <div class="side-bottom">bottom</div>
       </div>
 
-      <div class="main-content">
+      <section class="main-content">
         <div class="navbar">
           <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
           <h2>Dashboard</h2>
@@ -44,7 +44,7 @@
           </div>
         </div>
 
-        <div class="content">
+        <section class="content">
           <div class="widget">
             <h3>Widget 1</h3>
             <p>Content for Widget 1</p>
@@ -64,8 +64,53 @@
             <h3>Widget 4</h3>
             <p>Content for Widget 4</p>
           </div>
+        </section>
+
+        <div class="analytics content">
+          <table class="table">
+            <thead>
+              <th>#code</th>
+              <th>Name</th>
+              <th>Sales</th>
+              <th>revenue</th>
+              <th>Status</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="S.No">1</td>
+                <td data-label="Name">Dinesh</td>
+                <td data-label="Age">34</td>
+                <td data-label="Marks%">50%</td>
+                <td data-label="Staus">Passed</td>
+              </tr>
+
+              <tr>
+                <td data-label="S.No">2</td>
+                <td data-label="Name">Kamal</td>
+                <td data-label="Age">23</td>
+                <td data-label="Marks%">70%</td>
+                <td data-label="Staus">Passed</td>
+              </tr>
+
+              <tr>
+                <td data-label="S.No">3</td>
+                <td data-label="Name">Neha</td>
+                <td data-label="Age">20</td>
+                <td data-label="Marks%">90%</td>
+                <td data-label="Staus">Passed</td>
+              </tr>
+
+              <tr>
+                <td data-label="S.No">4</td>
+                <td data-label="Name">Priya</td>
+                <td data-label="Age">30</td>
+                <td data-label="Marks%">30%</td>
+                <td data-label="Staus">Failed</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
+      </section>
     </div>
 
     <script>
