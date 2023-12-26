@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e2182d37e5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Responsive Dashboard</title>
   </head>
   <body>
@@ -12,11 +16,21 @@
         <div>
           <h2>Dashboard</h2>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Sales</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Reports</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chart-simple"></i>Analytics</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-money-bill"></i>Sales</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-product-hunt"></i>Products</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-file"></i> Reports</a>
+            </li>
             <li class="user-dropdown">
               <a href="#">User</a>
               <div class="user-dropdown-content">
@@ -35,7 +49,7 @@
           <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
           <h2>Dashboard</h2>
           <div class="user-dropdown">
-            <p>Welcome, User!</p>
+            <p>Welcome, Brian <i class="fa-solid fa-user"></i></p>
             <div class="user-dropdown-content">
               <a href="#">Profile</a>
               <a href="#">Settings</a>
@@ -46,23 +60,23 @@
 
         <section class="content">
           <div class="widget">
-            <h3>Widget 1</h3>
-            <p>Content for Widget 1</p>
+            <h3><i class="fa-solid fa-money-bill"></i> Sales</h3>
+            <p><i class="fa-solid fa-dollar-sign"></i> 4545433</p>
           </div>
 
           <div class="widget">
-            <h3>Widget 2</h3>
-            <p>Content for Widget 2</p>
+            <h3><i class="fa-solid fa-money-check-dollar"></i> Revenue</h3>
+            <p><i class="fa-solid fa-dollar-sign"></i> 8000433</p>
           </div>
 
           <div class="widget">
-            <h3>Widget 3</h3>
-            <p>Content for Widget 3</p>
+            <h3><i class="fa-solid fa-users"></i> Users</h3>
+            <p>6000</p>
           </div>
 
           <div class="widget">
-            <h3>Widget 4</h3>
-            <p>Content for Widget 4</p>
+            <h3><i class="fa-solid fa-list-check"></i> Projects</h3>
+            <p>87669</p>
           </div>
         </section>
 
